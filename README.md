@@ -45,7 +45,7 @@ This focuses the optimization on liquid and vega-sensitive options, improving nu
 
 ### 2. Models
 
-#### Heston Model
+#### A) Heston Model
 
 $$
 \begin{aligned}
@@ -83,7 +83,7 @@ If violated, a soft penalty term is added:
 
 $$\mathcal{P}_F = \lambda_F \max(0, \sigma^2 - 2\kappa\theta)^2$$
 
-#### Sabr Model
+#### B) Sabr Model
 
 Stochastic volatility for forward-based underlyings:
 
@@ -99,7 +99,7 @@ The Hagan (2002) approximation is used for implied volatility:
 
 $$\sigma_{BS}(F,K) \approx \frac{\alpha}{(F K)^{(1-\beta)/2}} \left[1 + \frac{(1-\beta)^2}{24}\ln^2\left(\frac{F}{K}\right) + \cdots \right]$$
 
-#### Black-Scholes Model
+#### C) Black-Scholes Model
 
 Analytical pricing baseline:
 
