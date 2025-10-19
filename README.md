@@ -109,7 +109,7 @@ $$d_1 = \frac{\ln(S/K) + (r - q + 0.5\sigma^2)T}{\sigma \sqrt{T}}, \quad d_2 = d
 
 ### 3. Optimization
 
-| Stage | Algorithm | Purpose | Technology |
+| Stage | Algorithm | Goal | Tool |
 |:------|:----------|:--------|:-----------|
 | 1 | Moment Matching | Initialize with analytic cumulants | NumPy |
 | 2 | Global Scan | Latin hypercube sampling (32 points) | SciPy |
@@ -126,7 +126,7 @@ Supports both price-space and iv-space calibration.
 
 Achieved on real market data (Spx, 125 options, 8 maturities):
 
-| Model | R² | Rmse | Time |
+| Model | R² | Rmse | Recalibration Time |
 |-------|-----|------|------|
 | **Heston** | **0.880** | $47.04 | 17.8s |
 | Sabr | 0.823 | $57.25 | 59.0s |
