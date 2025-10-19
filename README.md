@@ -151,22 +151,7 @@ python>=3.11
 numpy
 scipy
 pandas
-<<<<<<< HEAD
-```
-
-## Key Features
-
-- Characteristic function pricing (Carr-Madan fft)
-- Staged optimization (moment → global → local → polish)
-- Vega weighting for liquid options
-- Expanded parameter bounds
-- Soft Feller penalty
-- Correct forward usage in Sabr
-=======
-matplotlib
-numba       # optional for JIT acceleration
 ```
 
 ## Notes
 - Extension of Math 96 Final Project, pipeline architecture & design by Prof. Johannes Van Erp. 
->>>>>>> ca5abfed140f479f2976e769ff8819268d5e2b38
