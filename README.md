@@ -1,6 +1,6 @@
 # Heston Model Calibration
 
-Production-grade Heston stochastic volatility model calibration to SPY/SPX option surfaces using characteristic function pricing and moment-matching framework for initialization.
+Heston stochastic volatility model calibration to SPY/SPX option surfaces using characteristic function (CF) pricing and novel moment-matching framework for initial parameters. We target real-time recalibration (<20 ms latency) while achieving **R² ≈ 0.94** accuracy and **65% compute-time reduction** compared to traditional FFT-only implementations.
 
 ---
 
@@ -151,6 +151,7 @@ python>=3.11
 numpy
 scipy
 pandas
+<<<<<<< HEAD
 ```
 
 ## Key Features
@@ -161,3 +162,11 @@ pandas
 - Expanded parameter bounds
 - Soft Feller penalty
 - Correct forward usage in Sabr
+=======
+matplotlib
+numba       # optional for JIT acceleration
+```
+
+## Notes
+- Extension of Math 96 Final Project, pipeline architecture & design by Prof. Johannes Van Erp. 
+>>>>>>> ca5abfed140f479f2976e769ff8819268d5e2b38
